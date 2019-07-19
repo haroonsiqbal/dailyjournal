@@ -5,5 +5,79 @@
 
 .flexbox {
     display: flex;
+    font-family: 'Raleway', sans-serif; 
+    font-size: 2em;
+    background-color: #ffdcc9;
+    line-height: 60px;
+    
+}
+
+.flexbox:hover {
+    background-color: #d6eeff;
+}
+
+h1 {
+    color: #7570ff;
+    font-size: 4.5em;
+    font-family: 'Noto Serif', serif; 
+    padding-top: 10px;
+    text-align: center;
+   
+}
+
+.entryLog {
+    
+
+}
+.entryStyle {
+    margin: 20px;
+    border: 1px solid #dcdee0;
+    border-radius: 20px;
+}
+
+.divStyle {
+    margin: 10px;
+    font-family: 'Noto Serif', serif;
+    
+}
+
+.entryStyle:hover {
+    background-color: #fce8ff;
+}
+
+h2 {
+    font-size: 3em;
+    color: #7570ff;
+    text-align: center; 
+}
+
+h4 {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+p {
+    color: navy;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+h5 {
+    font-size: 1.3em;
+    color: #ff9670;  
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.button {
+    background-color: #54856e;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
     
 }
