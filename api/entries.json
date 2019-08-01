@@ -48,6 +48,13 @@
       "journalEntry": "Today I learned an important tip, which is using the debugger at each step of the data fetching process to make sure the data is being returned correctly.",
       "moodForTheDay": "Excited",
       "id": 7
+    },
+    {
+      "dateOfEntry": "2019-08-01",
+      "conceptsCovered": "Internal Code",
+      "journalEntry": "Today I learned the difference between internal code, which is code that exists within a function, and external code, which is code outside the function that invokes the internal code.",
+      "moodForTheDay": "anxious",
+      "id": 8
     }
   ]
 }

@@ -16,25 +16,25 @@
     <form action="">
         <fieldset class="flexbox">
             <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input class="dateInput" type="date" name="journalDate" id="journalDate">
         </fieldset>
     </form>
     <form action="">
         <fieldset class="flexbox">
             <label for="journalConcepts">Concepts covered</label>
-            <input type="text" name="journalConcepts" id="journalConcepts">
+            <input class="conceptsInput" type="text" name="journalConcepts" id="journalConcepts">
         </fieldset>
     </form>
     <form action="">
         <fieldset class="flexbox">
             <label for="journalEntry">Journal Entry</label>
-            <textarea rows="5" cols="20" name="journalEntry" id="journalEntry"></textarea>
+            <textarea class="entryInput" rows="5" cols="20" name="journalEntry" id="journalEntry"></textarea>
         </fieldset>
     </form>
     <form action="">
         <fieldset class="flexbox">
             <label for="mood">Mood for the day</label>
-            <select>
+            <select class="moodInput">
                 <option value="frustrated">Frustrated</option>
                 <option value="happy">Happy</option>
                 <option value="excited">Excited</option>
@@ -49,9 +49,12 @@
 
 <article class="entryLog">
 
-</article>    
-
-    <script src="/src/scripts/journal.js"></script>
+</article>       
+    <script src="/src/scripts/data.js"></script>
+    <script src="/src/scripts/entriesDOM.js"></script>
+    <script src="/src/scripts/entryComponent.js"></script>
+    <script src="/src/scripts/main.js"></script> 
+    
 </body>
 
 </html>

@@ -55,35 +55,35 @@
 
 
 
-containerJournal = document.querySelector(".entryLog");
+// containerJournal = document.querySelector(".entryLog");
 
-const renderJournalEntries = () => {
+// const renderJournalEntries = () => {
 
-fetch("http://localhost:3000/entries") // Fetch from the API
-    .then(data => data.json())  // Parse as JSON
-    .then(entries => {
-        // What should happen when we finally have the array?
-for (const journal of entries) {
-  let makeJournalEntryComponent = `
-        <article class="entryStyle">
-          <div class="divStyle">
-            <h2>${journal.conceptsCovered}</h2>
-          </div>
-          <div class="divStyle">
-            <hr>
-            <h4>${journal.dateOfEntry}</h4>
-          </div>
-          <div class="divStyle">
-            <p>${journal.journalEntry}</p>
-          </div>
-          <div class="divStyle">
-            <h5>Current Mood: ${journal.moodForTheDay}</h5>
-          </div>
-        </article>
-    `
-    containerJournal.innerHTML += makeJournalEntryComponent;
-  }
-}
-)}
-// Invoke the render function
-renderJournalEntries();
+// fetch("http://localhost:3000/entries") // Fetch from the API
+//     .then(data => data.json())  // Parse as JSON
+//     .then(entries => {
+//         // What should happen when we finally have the array?
+// for (const journal of entries) {
+//   let makeJournalEntryComponent = `
+//         <article class="entryStyle">
+//           <div class="divStyle">
+//             <h2>${journal.conceptsCovered}</h2>
+//           </div>
+//           <div class="divStyle">
+//             <hr>
+//             <h4>${journal.dateOfEntry}</h4>
+//           </div>
+//           <div class="divStyle">
+//             <p>${journal.journalEntry}</p>
+//           </div>
+//           <div class="divStyle">
+//             <h5>Current Mood: ${journal.moodForTheDay}</h5>
+//           </div>
+//         </article>
+//     `
+//     containerJournal.innerHTML += makeJournalEntryComponent;
+//   }
+// }
+// )}
+// // Invoke the render function
+// renderJournalEntries();
