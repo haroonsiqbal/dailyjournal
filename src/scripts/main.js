@@ -1,5 +1,4 @@
 journalFetch().then(entries => {
-    // What should happen when we finally have the array?
 for (const journal of entries) {
     const converted = makeJournalHTML(journal)
     factoryJournal(converted);
@@ -37,4 +36,67 @@ const createJSON = (date, concepts, entry, mood) => {
       
 }
 
+ontainerJournal = document.querySelector(".entryLog");
+
+const frustratedButton = document.querySelector("#frustratedButton")
+frustratedButton.addEventListener("click", event => {
+    const mood = event.target.value
+    console.log(mood)
+    journalFetch().then(entries => {
+        const filtered = entries.filter(entry => entry.moodForTheDay === mood)
+        console.log(filtered);
+    containerJournal.innerHTML = ""   
+    for (const journal of filtered) {
+        const converted = makeJournalHTML(journal)
+        factoryJournal(converted);
+        }
+    })
+    
+    
+})
+
+const happyButton = document.querySelector("#happyButton")
+happyButton.addEventListener("click", event => {
+    const mood = event.target.value
+    console.log(mood)
+    journalFetch().then(entries => {
+        const filtered = entries.filter(entry => entry.moodForTheDay === mood)
+        console.log(filtered);
+        containerJournal.innerHTML = ""   
+        for (const journal of filtered) {
+            const converted = makeJournalHTML(journal)
+            factoryJournal(converted);
+            }
+        })
+})
+
+const excitedButton = document.querySelector("#excitedButton")
+excitedButton.addEventListener("click", event => {
+    const mood = event.target.value
+    console.log(mood)
+    journalFetch().then(entries => {
+        const filtered = entries.filter(entry => entry.moodForTheDay === mood)
+        console.log(filtered);
+        containerJournal.innerHTML = ""   
+    for (const journal of filtered) {
+        const converted = makeJournalHTML(journal)
+        factoryJournal(converted);
+        }
+        })
+})
+
+const anxiousButton = document.querySelector("#anxiousButton")
+anxiousButton.addEventListener("click", event => {
+    const mood = event.target.value
+    console.log(mood)
+    journalFetch().then(entries => {
+        const filtered = entries.filter(entry => entry.moodForTheDay === mood)
+        console.log(filtered);
+        containerJournal.innerHTML = ""   
+        for (const journal of filtered) {
+            const converted = makeJournalHTML(journal)
+            factoryJournal(converted);
+            }    
+    })
+})
 

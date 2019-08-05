@@ -4,49 +4,49 @@
       "dateOfEntry": "7/14/2019",
       "conceptsCovered": "Anonymous Functions",
       "journalEntry": "Today I learned that a function that is not named is called an anonymous function, which is also sometimes referred to as a lambda function.",
-      "moodForTheDay": "Happy",
+      "moodForTheDay": "happy",
       "id": 1
     },
     {
       "dateOfEntry": "7/15/2019",
       "conceptsCovered": "Arrow Functions",
       "journalEntry": "Today I learned that you do not need parantheses around a parameter in an arrow function if there is only parameter in the function.",
-      "moodForTheDay": "Excited",
+      "moodForTheDay": "excited",
       "id": 2
     },
     {
       "dateOfEntry": "7/16/2019",
       "conceptsCovered": "Clever Code",
       "journalEntry": "Today I learned that readable code is preferrable to clever code, even if it takes longer to write out and is less efficient.",
-      "moodForTheDay": "Happy",
+      "moodForTheDay": "happy",
       "id": 3
     },
     {
       "dateOfEntry": "7/17/2019",
       "conceptsCovered": "Dry Coding",
       "journalEntry": "Today I learned about the acronym DRY (Don't Repeat Yourself), which means you should avoid repeating lines of codes.",
-      "moodForTheDay": "Excited",
+      "moodForTheDay": "excited",
       "id": 4
     },
     {
       "dateOfEntry": "7/18/2019",
       "conceptsCovered": "Factory Functions",
       "journalEntry": "Today I learned about factory functions, which are functions that start with the word create and are generally used to create something.",
-      "moodForTheDay": "Happy",
+      "moodForTheDay": "happy",
       "id": 5
     },
     {
       "dateOfEntry": "7/19/2019",
       "conceptsCovered": "Postman Commands",
       "journalEntry": "Today I learned about the four most common commands in Postman (a program for working with JSON server data): GET, POST, DELETE, and PUT.",
-      "moodForTheDay": "Anxious",
+      "moodForTheDay": "anxious",
       "id": 6
     },
     {
       "dateOfEntry": "7/22/2019",
       "conceptsCovered": "Debugger",
       "journalEntry": "Today I learned an important tip, which is using the debugger at each step of the data fetching process to make sure the data is being returned correctly.",
-      "moodForTheDay": "Excited",
+      "moodForTheDay": "excited",
       "id": 7
     },
     {
@@ -55,6 +55,13 @@
       "journalEntry": "Today I learned the difference between internal code, which is code that exists within a function, and external code, which is code outside the function that invokes the internal code.",
       "moodForTheDay": "anxious",
       "id": 8
+    },
+    {
+      "dateOfEntry": "2019-08-05",
+      "conceptsCovered": "Abstraction",
+      "journalEntry": "Today I learned about the concept of abstraction, in which important parts of a process are shown to the user while the details of the process remain hidden.",
+      "moodForTheDay": "frustrated",
+      "id": 9
     }
   ]
 }
