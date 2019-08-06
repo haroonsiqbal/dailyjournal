@@ -36,7 +36,7 @@ const createJSON = (date, concepts, entry, mood) => {
       
 }
 
-ontainerJournal = document.querySelector(".entryLog");
+containerJournal = document.querySelector(".entryLog");
 
 const frustratedButton = document.querySelector("#frustratedButton")
 frustratedButton.addEventListener("click", event => {
@@ -100,3 +100,21 @@ anxiousButton.addEventListener("click", event => {
     })
 })
 
+containerJournal.addEventListener("click", (event) => {
+    if (event.target.id.startsWith("deleteButton")) {
+        const deleteID = event.target.id.split("--")[1]
+        deleteRecipe(deleteID)
+            .then(journalFetch)
+    }                                                                        
+
+
+})
+
+const deleteRecipe = (deleteID) => {
+    return fetch(`http://localhost:3000/entries/${deleteID}`,
+    {
+        "method": "DELETE"
+    }
+    ) 
+    .then(response => response.json())
+}

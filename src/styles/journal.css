@@ -93,3 +93,14 @@ h5 {
     font-weight: bold;
     
 }
+
+.button2 {
+    background-color: #73211c;
+    color: white;
+    font-size: .95em;
+    height: 30px;
+    width: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
