@@ -1,3 +1,7 @@
+import journalFetch from "./data.js"
+import factoryJournal from "./entriesDOM.js"
+import makeJournalHTML from "./entryComponent.js"
+
 journalFetch().then(entries => {
 for (const journal of entries) {
     const converted = makeJournalHTML(journal)
@@ -36,7 +40,7 @@ const createJSON = (date, concepts, entry, mood) => {
       
 }
 
-containerJournal = document.querySelector(".entryLog");
+const containerJournal = document.querySelector(".entryLog");
 
 const frustratedButton = document.querySelector("#frustratedButton")
 frustratedButton.addEventListener("click", event => {

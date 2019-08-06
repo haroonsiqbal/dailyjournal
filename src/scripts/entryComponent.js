@@ -20,3 +20,5 @@ const makeJournalHTML = (journal) => {
   </article>
 `
 }
+
+export default makeJournalHTML
