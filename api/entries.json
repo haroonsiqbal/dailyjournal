@@ -62,6 +62,20 @@
       "journalEntry": "Today I learned about the concept of abstraction, in which important parts of a process are shown to the user while the details of the process remain hidden.",
       "moodForTheDay": "frustrated",
       "id": 9
+    },
+    {
+      "dateOfEntry": "2019-08-07",
+      "conceptsCovered": "Native Modules",
+      "journalEntry": "Today I learned about native modules, which allows greater control over the level of privacy of code. This is accomplished through import and export statements and a single linked javascript file.",
+      "moodForTheDay": "frustrated",
+      "id": 10
+    },
+    {
+      "dateOfEntry": "2019-08-08",
+      "conceptsCovered": "Flat",
+      "journalEntry": "Today I learned about the flat array method, which can be used to take all the objects contained in an array with multiple arrays and collapse them all into a single array.",
+      "moodForTheDay": "anxious",
+      "id": 11
     }
   ]
 }
