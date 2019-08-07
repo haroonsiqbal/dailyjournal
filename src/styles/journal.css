@@ -44,7 +44,8 @@ h1 {
     margin: 20px;
     border: 1px solid #dcdee0;
     border-radius: 20px;
-    flex-basis: 30%
+    flex-basis: 30%;
+    background-color: #feffdb;
 }
 
 .divStyle {
@@ -55,6 +56,7 @@ h1 {
 
 .entryStyle:hover {
     background-color: #fce8ff;
+    border: 1px dashed #999999;
 }
 
 h2 {

@@ -4,5 +4,4 @@ const journalFetch = () => {
 
   }
 
- 
-  
+export default journalFetch

@@ -1,3 +1,7 @@
+import journalFetch from "./data.js"
+import factoryJournal from "./entriesDOM.js"
+import makeJournalHTML from "./entryComponent.js"
+
 journalFetch().then(entries => {
 for (const journal of entries) {
     const converted = makeJournalHTML(journal)
@@ -13,7 +17,7 @@ const moodInput = document.querySelector(".moodInput")
 const buttonLocation = document.querySelector(".button")
 
 buttonLocation.addEventListener("click", function() {
-    newPost = createJSON(dateInput.value, conceptsInput.value, entryInput.value, moodInput.value);
+    const newPost = createJSON(dateInput.value, conceptsInput.value, entryInput.value, moodInput.value);
     console.log(newPost);
     
     fetch("http://localhost:3000/entries", { 
@@ -23,6 +27,15 @@ buttonLocation.addEventListener("click", function() {
     },
     body: JSON.stringify(newPost)
     })
+
+    journalFetch().then(entries => {
+        containerJournal.innerHTML = "" 
+        for (const journal of entries) {
+            const converted = makeJournalHTML(journal)
+            factoryJournal(converted);
+        }
+        })
+
 })
 
 
@@ -36,7 +49,7 @@ const createJSON = (date, concepts, entry, mood) => {
       
 }
 
-containerJournal = document.querySelector(".entryLog");
+const containerJournal = document.querySelector(".entryLog");
 
 const frustratedButton = document.querySelector("#frustratedButton")
 frustratedButton.addEventListener("click", event => {
@@ -100,13 +113,30 @@ anxiousButton.addEventListener("click", event => {
     })
 })
 
+const seeAllButton = document.querySelector("#seeAllButton")
+seeAllButton.addEventListener("click", () => {
+    journalFetch().then(entries => {
+        containerJournal.innerHTML = "" 
+        for (const journal of entries) {
+            const converted = makeJournalHTML(journal)
+            factoryJournal(converted);
+        }
+        })
+})
+
 containerJournal.addEventListener("click", (event) => {
     if (event.target.id.startsWith("deleteButton")) {
         const deleteID = event.target.id.split("--")[1]
         deleteRecipe(deleteID)
-            .then(journalFetch)
-    }                                                                        
-
+       
+            }                                                                        
+    journalFetch().then(entries => {
+        containerJournal.innerHTML = "" 
+        for (const journal of entries) {
+            const converted = makeJournalHTML(journal)
+            factoryJournal(converted);
+        }
+        })
 
 })
 
