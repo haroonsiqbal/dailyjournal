@@ -15,7 +15,10 @@ const makeJournalHTML = (journal) => {
       <h5>Current Mood: ${journal.moodForTheDay}</h5>
     </div>
     <div>
-    <button class="button2" id="deleteButton--${journal.id}">DELETE</button>\
+    <button class="button2" id="deleteButton--${journal.id}">DELETE</button>
+    </div>
+    <div>
+    <button class="button2" id="editButton--${journal.id}">EDIT</button>
     </div>
   </article>
 `

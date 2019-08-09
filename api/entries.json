@@ -74,8 +74,15 @@
       "dateOfEntry": "2019-08-08",
       "conceptsCovered": "Flat",
       "journalEntry": "Today I learned about the flat array method, which can be used to take all the objects contained in an array with multiple arrays and collapse them all into a single array.",
-      "moodForTheDay": "anxious",
+      "moodForTheDay": "frustrated",
       "id": 11
+    },
+    {
+      "dateOfEntry": "2019-08-09",
+      "conceptsCovered": "Editing",
+      "journalEntry": "Today I learned that when editing a journal entry, you still need to create a new object and pass that object to the function that initiates the fetch request.",
+      "moodForTheDay": "happy",
+      "id": 12
     }
   ]
 }
